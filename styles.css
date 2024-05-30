@@ -85,5 +85,138 @@ body {
 }
 
 .rightSide {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafb;
   width: 100%;
+}
+
+.top-text {
+  margin-left: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  width: 75%;
+}
+span {
+  font-style: italic;
+}
+.mid-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+br {
+  height: 50px;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  height: 400px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+form {
+  display: flex;
+  flex-direction: row;
+  letter-spacing: 0.05rem;
+  margin-left: 75px;
+  height: 100%;
+  width: 100%;
+}
+.left-form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.form-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 2rem;
+}
+.input-container {
+  margin-top: 25px;
+  color: #36454f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+input {
+  border-radius: 5px;
+
+  border: 1.75px solid #e5e7eb; /* Add a border to the input */
+  padding: 7px; /* Add padding for better appearance */
+  outline: none;
+  max-width: 400px;
+}
+.input:focus {
+  border-radius: 5px;
+
+  border: 1.75px solid blue; /* Add a border to the input */
+  padding: 5px; /* Add padding for better appearance */
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.right-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+label {
+  text-wrap: nowrap;
+}
+.right-header {
+  color: #f9fafb;
+  height: 9.25%;
+}
+@media (max-width: 1672px) {
+  .right-header {
+    height: 18.375%;
+  }
+}
+
+@media (max-width: 1382px) {
+  .right-header {
+    height: 27.75%;
+  }
+}
+.bottom-container {
+  margin-top: 50px;
+  margin-left: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  color: #e5e7eb;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+  height: 50px;
+  width: 250px;
+  border: 1.75px solid #596d48;
+  border-radius: 8px;
+  background-color: #596d48;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.login {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650;
+  margin-top: 30px;
+  display: flex;
+}
+a {
+  margin-left: 5px;
+  text-decoration: none;
 }
