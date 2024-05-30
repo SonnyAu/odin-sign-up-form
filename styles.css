@@ -150,21 +150,29 @@ form {
 }
 input {
   border-radius: 5px;
-
   border: 1.75px solid #e5e7eb; /* Add a border to the input */
   padding: 7px; /* Add padding for better appearance */
   outline: none;
   max-width: 400px;
 }
-.input:focus {
+input:focus {
   border-radius: 5px;
-
   border: 1.75px solid blue; /* Add a border to the input */
   padding: 5px; /* Add padding for better appearance */
   outline: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
     rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
     rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+input.error {
+  border: 1.75px solid red !important;
+}
+.error-message {
+  letter-spacing: 0;
+  font-style: normal;
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 5px;
 }
 .right-form {
   display: flex;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="main">
@@ -52,13 +53,14 @@
                 />
               </div>
               <div class="password input-container">
-                <label for="password ">PASSWORD</label>
+                <label for="password">PASSWORD</label>
                 <input
-                  type="password "
-                  id="password "
-                  name="password "
+                  type="password"
+                  id="password"
+                  name="password"
                   class="password-input input"
                 />
+                <span id="passwordError" class="error-message"></span>
               </div>
             </div>
             <div class="right-form">
@@ -83,20 +85,23 @@
                 />
               </div>
               <div class="confirm-password input-container">
-                <label for="password ">PASSWORD</label>
+                <label for="confirm-password">CONFIRM PASSWORD</label>
                 <input
-                  type="password "
-                  id="confirm-password "
-                  name="confirm-password "
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
                   class="confirm-password-input input"
                 />
+                <span id="confirmPasswordError" class="error-message"></span>
               </div>
             </div>
           </form>
         </div>
         <!--ContainerBelow Form-->
         <div class="bottom-container">
-          <div class="button"><button>Create Account</button></div>
+          <div class="button">
+            <button onclick="checkPassword()">Create Account</button>
+          </div>
           <div class="login">
             <div>Already have an account?</div>
             <a href="https://www." style="color: #596d48" target="_blank">
